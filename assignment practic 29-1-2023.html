@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - GoSNippets</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <style>
+        body {
+            background-color: #eee
+        }
+
+        .container {
+            width: 900px
+        }
+
+        .card {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            width: 190px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        }
+
+        .image-container {
+            position: relative
+        }
+
+        .thumbnail-image {
+            border-radius: 10px !important
+        }
+
+        .discount {
+            background-color: red;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 10px;
+            border-radius: 6px;
+            color: #fff
+        }
+
+        .wishlist {
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        }
+
+        .first {
+            position: absolute;
+            width: 100%;
+            padding: 9px
+        }
+
+        .dress-name {
+            font-size: 13px;
+            font-weight: bold;
+            width: 75%
+        }
+
+        .new-price {
+            font-size: 13px;
+            font-weight: bold;
+            color: red
+        }
+
+        .old-price {
+            font-size: 8px;
+            font-weight: bold;
+            color: grey
+        }
+
+        .btn {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            padding: 3px
+        }
+
+        .creme {
+            background-color: #fff;
+            border: 2px solid grey
+        }
+
+        .creme:hover {
+            border: 3px solid grey
+        }
+
+        .creme:focus {
+            background-color: grey
+        }
+
+        .red {
+            background-color: #fff;
+            border: 2px solid red
+        }
+
+        .red:hover {
+            border: 3px solid red
+        }
+
+        .red:focus {
+            background-color: red
+        }
+
+        .blue {
+            background-color: #fff;
+            border: 2px solid #40C4FF
+        }
+
+        .blue:hover {
+            border: 3px solid #40C4FF
+        }
+
+        .blue:focus {
+            background-color: #40C4FF
+        }
+
+        .darkblue {
+            background-color: #fff;
+            border: 2px solid #01579B
+        }
+
+        .darkblue:hover {
+            border: 3px solid #01579B
+        }
+
+        .darkblue:focus {
+            background-color: #01579B
+        }
+
+        .yellow {
+            background-color: #fff;
+            border: 2px solid #FFCA28
+        }
+
+        .yellow:hover {
+            border-radius: 3px solid #FFCA28
+        }
+
+        .yellow:focus {
+            background-color: #FFCA28
+        }
+
+        .item-size {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #fff;
+            border: 1px solid grey;
+            color: grey;
+            font-size: 10px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center
+        }
+
+        .rating-star {
+            font-size: 10px !important
+        }
+
+        .rating-number {
+            font-size: 10px;
+            color: grey
+        }
+
+        .buy {
+            font-size: 12px;
+            color: purple;
+            font-weight: 500
+        }
+
+        .voutchers {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            width: 190px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            overflow: hidden
+        }
+
+        .voutcher-divider {
+            display: flex
+        }
+
+        .voutcher-left {
+            width: 60%
+        }
+
+        .voutcher-name {
+            color: grey;
+            font-size: 9px;
+            font-weight: 500
+        }
+
+        .voutcher-code {
+            color: red;
+            font-size: 11px;
+            font-weight: bold
+        }
+
+        .voutcher-right {
+            width: 40%;
+            background-color: purple;
+            color: #fff
+        }
+
+        .discount-percent {
+            font-size: 12px;
+            font-weight: bold;
+            position: relative;
+            top: 5px
+        }
+
+        .off {
+            font-size: 14px;
+            position: relative;
+            bottom: 5px
+        }
+    </style>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+</head>
+
+<body oncontextmenu='return false' class='snippet-body'>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="image-container">
+                        <div class="first">
+                            <div class="d-flex justify-content-between align-items-center"> <span
+                                    class="discount">-25%</span> <span class="wishlist"><i
+                                        class="fa fa-heart-o"></i></span> </div>
+                        </div> <img
+                            src="https://images.ctfassets.net/hrltx12pl8hq/3j5RylRv1ZdswxcBaMi0y7/b84fa97296bd2350db6ea194c0dce7db/Music_Icon.jpg"
+                            class="img-fluid rounded thumbnail-image">
+                    </div>
+                    <div class="product-detail-container p-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="dress-name">White traditional long dress</h5>
+                            <div class="d-flex flex-column mb-2"> <span class="new-price">$3.99</span> <small
+                                    class="old-price text-right">$5.99</small> </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-1">
+                            <div class="color-select d-flex "> <input type="button" name="grey" class="btn creme">
+                                <input type="button" name="red" class="btn red ml-2"> <input type="button" name="blue"
+                                    class="btn blue ml-2">
+                            </div>
+                            <div class="d-flex "> <span class="item-size mr-2 btn" type="button">S</span> <span
+                                    class="item-size mr-2 btn" type="button">M</span> <span class="item-size btn"
+                                    type="button">L</span> </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-1">
+                            <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.8</span> </div>
+                            <span class="buy">BUY +</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="card voutchers">
+                        <div class="voutcher-divider">
+                            <div class="voutcher-left text-center"> <span class="voutcher-name">Monday Happy</span>
+                                <h5 class="voutcher-code">#MONHPY</h5>
+                            </div>
+                            <div class="voutcher-right text-center border-left">
+                                <h5 class="discount-percent">20%</h5> <span class="off">Off</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="image-container">
+                        <div class="first">
+                            <div class="d-flex justify-content-between align-items-center"> <span
+                                    class="discount">-25%</span> <span class="wishlist"><i
+                                        class="fa fa-heart-o"></i></span> </div>
+                        </div> <img
+                            src="data:image/jpeg;base64,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"
+                            class="img-fluid rounded thumbnail-image">
+                    </div>
+                    <div class="product-detail-container p-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="dress-name">Long sleeve denim jacket</h5>
+                            <div class="d-flex flex-column mb-2"> <span class="new-price">$3.99</span> <small
+                                    class="old-price text-right">$5.99</small> </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-1">
+                            <div class="color-select d-flex "> <input type="button" name="grey" class="btn creme">
+                                <input type="button" name="darkblue" class="btn darkblue ml-2">
+                            </div>
+                            <div class="d-flex "> <span class="item-size mr-2 btn" type="button">S</span> <span
+                                    class="item-size mr-2 btn" type="button">M</span> <span class="item-size btn"
+                                    type="button">L</span> </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-1">
+                            <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.8</span> </div>
+                            <span class="buy">BUY +</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="card voutchers">
+                        <div class="voutcher-divider">
+                            <div class="voutcher-left text-center"> <span class="voutcher-name">Payday Surprise</span>
+                                <h5 class="voutcher-code">#SRPSPYDY</h5>
+                            </div>
+                            <div class="voutcher-right text-center border-left">
+                                <h5 class="discount-percent">20%</h5> <span class="off">Off</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="image-container">
+                        <div class="first">
+                            <div class="d-flex justify-content-between align-items-center"> <span
+                                    class="discount">-25%</span> <span class="wishlist"><i
+                                        class="fa fa-heart-o"></i></span> </div>
+                        </div> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvRzSGyoPFkAK611PRdY8mApcrkJOHxX_rXw&usqp=CAU"
+                            class="img-fluid rounded thumbnail-image">
+                    </div>
+                    <div class="product-detail-container p-2">
+                        <div class="d-flex justify-content-between ">
+                            <h5 class="dress-name">Hush Puppies</h5>
+                            <div class="d-flex flex-column mb-2"> <span class="new-price">$3.99</span> <small
+                                    class="old-price text-right">$5.99</small> </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-1">
+                            <div class="color-select d-flex "> <input type="button" name="grey" class="btn creme">
+                                <input type="button" name="yellow" class="btn yellow ml-2"> <input type="button"
+                                    name="blue" class="btn blue ml-2">
+                            </div>
+                            <div class="d-flex "> <span class="item-size mr-2 btn" type="button">S</span> <span
+                                    class="item-size mr-2 btn" type="button">M</span> <span class="item-size btn"
+                                    type="button">L</span> </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-1">
+                            <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.2</span> </div>
+                            <span class="buy">BUY +</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="card voutchers">
+                        <div class="voutcher-divider">
+                            <div class="voutcher-left text-center"> <span class="voutcher-name">First order</span>
+                                <h5 class="voutcher-code">#HPYFRST</h5>
+                            </div>
+                            <div class="voutcher-right text-center border-left">
+                                <h5 class="discount-percent">20%</h5> <span class="off">Off</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="image-container">
+                        <div class="first">
+                            <div class="d-flex justify-content-between align-items-center"> <span
+                                    class="discount">-25%</span> <span class="wishlist"><i
+                                        class="fa fa-heart-o"></i></span> </div>
+                        </div> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiL0Kw4vEgpJgQ8X7JBK2cBvadHAzi2MC0_MHUtco3d_frZvwXH6HeiKgk8f56zTcQjS4&usqp=CAU"
+                            class="img-fluid rounded thumbnail-image">
+                    </div>
+                    <div class="product-detail-container p-2">
+                        <div class="d-flex justify-content-between ">
+                            <h5 class="dress-name">Athens skirt </h5>
+                            <div class="d-flex flex-column mb-2"> <span class="new-price">$3.99</span> <small
+                                    class="old-price text-right">$5.99</small> </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-1">
+                            <div class="color-select d-flex "> <input type="button" name="grey" class="btn creme">
+                                <input type="button" name="red" class="btn red ml-2"> <input type="button" name="blue"
+                                    class="btn blue ml-2">
+                            </div>
+                            <div class="d-flex "> <span class="item-size mr-2 btn" type="button">S</span> <span
+                                    class="item-size mr-2 btn" type="button">M</span> <span class="item-size btn"
+                                    type="button">L</span> </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-1">
+                            <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">3.8</span> </div>
+                            <span class="buy">BUY +</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="card voutchers">
+                        <div class="voutcher-divider">
+                            <div class="voutcher-left text-center"> <span class="voutcher-name">Vegetarian Food</span>
+                                <h5 class="voutcher-code">#VEGANLOVE</h5>
+                            </div>
+                            <div class="voutcher-right text-center border-left">
+                                <h5 class="discount-percent">20%</h5> <span class="off">Off</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript'></script>
+</body>
+
+</html>
